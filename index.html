@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CYBERBOOST</title>
+</head>
+ 
+<body>
+    <ul id="slide-out" class="sidenav">
+<!--         <li><a href="#main" class="sidenav-close"><i class="material-icons">home</i>Main</a></li> -->
+        <li><a href="#" class="sidenav-close"><i class="material-icons">grade</i>About</a></li>
+        <li><a href="#" class="sidenav-close"><i class="material-icons">done</i>Portfolio</a></li>
+        <li><a href="#" class="sidenav-close"><i class="material-icons">phone</i>Contacts</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Close</a></li>
+    </ul>
+
+    <div id="modal1" class="modal">
+        <p class="modal-p">Leave your contact information and get a free consultation</p>
+        <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+
+            <div class="g-form__inputs">
+                <div class="modal-content">
+                    <fieldset class="g-form__input-wrapper">
+                        <input class="g-form__input g-form__input_name" id="name" name="Имя"
+                            placeholder="Enter your name" required>
+                    </fieldset>
+                </div>
+
+                <div class="modal-content">
+                    <fieldset class="g-form__input-wrapper">
+                        <input class="g-form__input g-form__input_tel" type="number" id="tel" name="Телефон"
+                            placeholder="Enter your phone number">
+                    </fieldset>
+                </div>
+
+                <div class="modal-content">
+                    <fieldset class="g-form__input-wrapper">
+                        <input id="email" name="Email" type="email" value="" required placeholder="Enter your email" />
+                    </fieldset>
+                </div>
+
+                <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                    <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+                    <input id="honeypot" type="text" name="honeypot" value="">
+                </fieldset>
+                <div class="modal-footer">
+                    <div class="g-form__button-wrapper">
+                        <button class="g-form__button waves-effect waves-green btn-flat g-form__button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="header" id="header">
+        <div class="container header">
+            <div class="header__flex header-bg">
+                <div class="header__flex-burger sidenav-trigger" data-target="slide-out">
+                    <div class="header__flex-burger-line"></div>
+                    <div class="header__flex-burger-line"></div>
+                    <div class="header__flex-burger-line"></div>
+                </div>
+                <a href="#" class=""><img src="img/logo.png" class="header__flex-logo"></a>
+                <div class="header__flex-nav">
+<!--                     <a href="#main" class="header__flex-nav-a">Main</a> -->
+                    <a href="#" class="header__flex-nav-a">Mythic+ Dungeon 10-21</a>
+                    <a href="#" class="header__flex-nav-a">Raid</a>
+                    <a href="#" class="header__flex-nav-a">About Us</a>
+                    <a href="#" class="header__flex-nav-a">Flash leveling 1-70</a>
+                    <a href="#" class="header__flex-nav-a">Keystone master</a>
+                    <a href="#" class="header__flex-nav-a">Gearing</a>
+                </div>
+                <div class="header__flex-login">
+                    <button class="login-btn">Login</button>
+                    <div class="language-selector">
+                        <img src="img/en.png" alt="Language">
+                        <span>EN</span>
+                        <div class="language-dropdown">
+                            <div><img src="img/ru.png" alt="Русский"> RU</div>
+                            <div><img src="img/en.png" alt="English"> EN</div>
+                            <div><img src="img/de.png" alt="Deutsch"> DE</div>
+                            <div><img src="img/it.png" alt="Italiano"> IT</div>
+                            <div><img src="img/es.png" alt="Español"> ES</div>
+                            <div><img src="img/fr.png" alt="Français"> FR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <div class="content">
+            <h1>We'll upgrade your account</h1>
+            <p>Over 8 years of experience and 1000+ professional players on the team to solve your challenges.</p>
+            <button class="order-btn">Order Now</button>
+            <div class="icons">
+                <div class="icon">
+                    <img src="img/1.png" alt="Service">
+                    <h3>Service</h3>
+                    <p>Excellent quality - fair price</p>
+                </div>
+                <div class="icon">
+                    <img src="img/2.png" alt="Safely">
+                    <h3>Safely</h3>
+                    <p>Without risk to your account</p>
+                </div>
+                <div class="icon">
+                    <img src="img/3.png" alt="Timing">
+                    <h3>Timing</h3>
+                    <p>Meet deadlines - 24/7 support</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="services">
+        <div class="top-row">
+            <div class="service-item">
+                <a href="#" class="service-item-link">
+                    <img src="img/mythic.png" alt="Mythic+ Dungeon 10-21" class="service-item-img">
+                    <div class="service-item-content">
+                        <h2 class="service-item-title">Mythic+ Dungeon 10-21</h2>
+                        <p class="service-item-desc">Chance of getting item <span> 395-405 ilvl <br> 135 points of valor</span> for passing the key</p>
+                        <p class="service-item-price">From <span>$4.95</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#" class="service-item-link">
+                    <img src="img/flash.png" alt="Flash Leveling 1-70" class="service-item-img">
+                    <div class="service-item-content">
+                        <h2 class="service-item-title">Flash Leveling 1-70</h2>
+                        <p class="service-item-desc">1-70 Custom <span>Powerleveling</span> <br>
+                            Add <span>ilvl boost,</span> Dungeon runs & Glyphs</p>
+                        <p class="service-item-price">From <span>$9.95</span></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-row">
+            <div class="service-item">
+                <a href="#" class="service-item-link">
+                    <img src="img/keystone.png" alt="Keystone Master" class="service-item-img">
+                    <div class="service-item-content">
+                        <h2 class="service-item-title">Keystone Master</h2>
+                        <p class="service-item-desc"><span>2000+</span> mythic+ score</p>
+                        <p class="service-item-price">From <span>$4.95</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#" class="service-item-link">
+                    <img src="img/gearing.png" alt="Gearing" class="service-item-img">
+                    <div class="service-item-content">
+                        <h2 class="service-item-title">Gearing</h2>
+                        <p class="service-item-desc">PvP/PvE <span>Power Boost</span></p>
+                        <p class="service-item-price">From <span>$5.95</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#" class="service-item-link">
+                    <img src="img/raid.png" alt="Raid" class="service-item-img">
+                    <div class="service-item-content">
+                        <h2 class="service-item-title">Raid</h2>
+                        <p class="service-item-desc">Guaranteed <span>Great Vault rewards</span></p>
+                        <p class="service-item-price">From <span>$7.95</span></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+      
+ <!--   <section class="services">
+        <div class="portfolio__grid-item">
+            <a href="#" class="portfolio__grid-item-a"><img
+                    src="img/mythic.png" class="portfolio__grid-item-img"></a>
+            <div class="portfolio__grid-item-flex">
+                <a href="#"><h2 class="portfolio__grid-item-h2">Mythic+ Dungeon 10-21</h2></a>
+                <p class="portfolio__grid-item-p">From $4.95</p>
+                <p class="portfolio__grid-item-p">Chance of getting item 226-246 ilvl</p>
+                <button class="portfolio__grid-button">Order Now</button>
+        </div>
+        <div class="portfolio__grid-item">
+            <a href="#" class="portfolio__grid-item-a"><img
+                    src="img/flash.png" class="portfolio__grid-item-img"></a>
+            <div class="portfolio__grid-item-flex">
+                <a href="#"><h2 class="portfolio__grid-item-h2">Flash leveling 1-70</h2></a>
+                <p class="portfolio__grid-item-p">From $9.95</p>
+                <p class="portfolio__grid-item-p">1-70 Custom Powerleveling</p>
+                <button class="portfolio__grid-button">Order Now</button>
+        </div>
+        <div class="portfolio__grid-item">
+            <a href="#" class="portfolio__grid-item-a"><img
+                    src="img/keystone.png" class="portfolio__grid-item-img"></a>
+            <div class="portfolio__grid-item-flex">
+                <a href="#"><h2 class="portfolio__grid-item-h2">Keystone master</h2></a>
+                <p class="portfolio__grid-item-p">From $4.95</p>
+                <p class="portfolio__grid-item-p">2000+ mythic+ score</p>
+                <button class="portfolio__grid-button">Order Now</button>
+        </div>
+        <div class="portfolio__grid-item">
+            <a href="#" class="portfolio__grid-item-a"><img
+                    src="img/gearing.png" class="portfolio__grid-item-img"></a>
+            <div class="portfolio__grid-item-flex">
+                <a href="#"><h2 class="portfolio__grid-item-h2">Gearing</h2></a>
+                <p class="portfolio__grid-item-p">From $5.95</p>
+                <p class="portfolio__grid-item-p">PvP/PvE Power Boost</p>
+                <button class="portfolio__grid-button">Order Now</button>
+        </div>
+        <div class="portfolio__grid-item">
+            <a href="#" class="portfolio__grid-item-a"><img
+                    src="img/raid.png" class="portfolio__grid-item-img"></a>
+            <div class="portfolio__grid-item-flex">
+                <a href="#"><h2 class="portfolio__grid-item-h2">Raid</h2></a>
+                <p class="portfolio__grid-item-p">From $7.95</p>
+                <p class="portfolio__grid-item-p">Guaranteed Great Vault rewards</p>
+                <button class="portfolio__grid-button">Order Now</button>
+        </div>
+    </section> -->
+
+    <section class="boosting">
+        <div class="boosting__container">
+            <h2>How to Buy <span>WoW Boosting?</span></h2>
+            <div class="boosting__grid-stack">
+                <div class="boosting__step">
+                    <img src="img/browe.png" alt="browse">
+                    <h4 class="step-title">Browse</h4>
+                    <p>Explore our services & make a choice</p>
+                </div>
+                <img class="arrow" src="img/Vector.png" alt="arrow">
+                <div class="boosting__step">
+                    <img src="img/details.png" alt="details">
+                    <h4 class="step-title">Details</h4>
+                    <p>Connect with us & get the details</p>
+                </div>
+                <img class="arrow" src="img/Vector.png" alt="arrow">
+                <div class="boosting__step">
+                    <img src="img/payment.png" alt="payment">
+                    <h4 class="step-title">Payment</h4>
+                    <p>Place your order & make payment</p>
+                </div>
+                <img class="arrow" src="img/Vector.png" alt="arrow">
+                <div class="boosting__step">
+                    <img src="img/process.png" alt="process">
+                    <h4 class="step-title">Process</h4>
+                    <p>Our professionals will fulfill the order</p>
+                </div>
+                <img class="arrow" src="img/Vector.png" alt="arrow">
+                <div class="boosting__step">
+                    <img src="img/approval.png" alt="approval">
+                    <h4 class="step-title">Approval</h4>
+                    <p>Confirm compliance & leave feedback!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+   <!-- <section class="boosting">
+        <div class="boosting__grid-steck">
+            <img src="img/browe.png" alt="browse">
+            <p>Browse</p> <br>
+            <p>Explore our services & make a choice</p>
+            <img src="img/details.png" alt="details">
+            <p>Details</p> <br>
+            <p>Connect with us & get the details</p>
+            <img src="img/payment.png" alt="payment">
+            <p>Payment</p> <br>
+            <p>Place your order & make payment</p>
+            <img src="img/process.png" alt="process">
+            <p>Process</p> <br>
+            <p>Our professionals will fulfill the order</p>
+            <img src="img/approval.png" alt="approval">
+            <p>Approval</p> <br>
+            <p>Confirm compliance & leave feedback!</p>
+        </div>
+    </section> -->
+ <!--   <section class="about" id="about">
+        <div class="container">
+            <h1 class="services__h">About</h1>
+            <div class="about__grid">
+                <div class="about__grid-text">
+                    <div class="swiper about__grid-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi exercitationem aliquam, beatae perferendis unde ducimus optio voluptatem officia, soluta magni enim blanditiis sed reprehenderit minus recusandae praesentium! Porro omnis ipsam doloribus, consequatur aperiam ut dolor perspiciatis asperiores sit laborum facere officia mollitia repellendus iure error reiciendis.</p>
+                                <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam fugit neque velit at, facilis architecto dolores nihil placeat delectus fuga officia veritatis adipisci possimus quis totam nam nemo libero odio eius officiis accusantium esse.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="about" id="about">
+        <div class="container">
+            <h1 class="services__h">About <span>Us</span></h1>
+            <div class="about__grid">
+                <div class="about__grid-text">
+                    <div class="swiper about__grid-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="about__grid-columns">
+                                    <div class="column">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi exercitationem aliquam, beatae perferendis unde ducimus optio voluptatem officia, soluta magni enim blanditiis sed reprehenderit minus recusandae praesentium! Porro omnis ipsam doloribus, consequatur aperiam ut dolor perspiciatis asperiores sit laborum facere officia mollitia repellendus iure error reiciendis.</p>
+                                    </div>
+                                    <div class="column">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam fugit neque velit at, facilis architecto dolores nihil placeat delectus fuga officia veritatis adipisci possimus quis totam nam nemo libero odio eius officiis accusantium esse.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-order">
+                <div class="custom-order-content">
+                    <div class="custom-order-text">
+                        <h2>Can't find what you need? <span class="highlight">Not a problem!</span></h2>
+                        <p>We can help you customize a unique order to fit your needs.</p>
+                    </div>
+                    <button class="custom-order-button">Custom Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <div class="footer__services">
+                    <h3>SERVICES</h3>
+                    <a href="#">Mythic+ Dungeon 10-21</a><br>
+                    <a href="#">Raid</a><br>
+                    <a href="#">Flash Leveling 1-70</a><br>
+                    <a href="#">Keystone Master</a><br>
+                    <a href="#">Gearing</a>
+                </div>
+                <div class="footer__other">
+                    <h3>OTHER</h3>
+                    <a href="#">User Agreement</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Use of Cookies</a><br>
+                    <a href="#">Guarantees</a><br>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="footer__contact-payment">
+                    <h3>Contact Us</h3>
+                    <div class="contact-icons">
+                        <a href="#"><img src="img/tg.png" alt="Telegram"></a>
+                        <a href="#"><img src="img/gm.png" alt="Gmail"></a>
+                    </div>
+                    <h3>Payment Methods</h3>
+                    <div class="payment-icons">
+                        <p><img src="img/card.png" alt="Card"> <img src="img/crypto.png" alt="Crypto"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__flex">
+                <div>
+                    <p>&copy; 2023 All Rights Reserved. Any third party trademarks are mentioned solely to clarify compatibility with BestBoost services.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/google-form.js"></script>
+</body>
+
+</html>
